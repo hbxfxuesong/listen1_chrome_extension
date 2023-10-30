@@ -18,6 +18,9 @@
     <link href="css/origin.css" rel="stylesheet" id="theme-css" />
     <link href="css/common.css" rel="stylesheet" id="common-css"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link href="images/logo_16.png" rel="shortcut icon" />
     <link href="images/logo_16.png" rel="bookmark" />
     <script>
@@ -67,6 +70,7 @@
     <script type="text/javascript" src="js/controller/platform.js"></script>
     <script type="text/javascript" src="js/controller/playlist.js"></script>
     <script type="text/javascript" src="js/controller/play.js"></script>
+    <script type="text/javascript" src="js/download.js"></script>
     <script
       type="text/javascript"
       src="js/controller/instant_search.js"
@@ -1905,6 +1909,12 @@
                               ng-show="settings.playmode == 2"
                               class="icon li-single-cycle"
                             ></span>
+                          </a>
+                          <a ng-click="download(currentPlaying.source_url)">
+                        <!--<i class="fa fa-download" aria-hidden="true"></i>-->
+                        <span style="background-image: url(/fonts/down.svg);background-size: 16px 16px; width: 16px;height: 16px">
+                          &nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
                           </a>
                         </div>
     
